@@ -5,7 +5,7 @@ import coursesData from '../../data/music_courses.json';
 import { CardBody, CardContainer, CardItem } from '@/components/ui/3d-card';
 import Image from 'next/image';
 
-export function CoursesPage() {
+function CoursesPage() {
   return (
     <div className="min-h-screen bg-black py-12 pt-36">
       <h1 className="text-lg md:text-7xl text-center font-sans font-bold mb-8">
