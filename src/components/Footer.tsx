@@ -80,7 +80,9 @@ export function Footer() {
           <p>Phone: (123) 456-7890</p>
         </div>
       </div>
-      <p className='text-center'>© 2024 Music School. All rights reserved.</p>
+      <p className="text-center text-xs sm:text-sm md:text-base pt-8">
+        © 2024 Music School. All rights reserved.
+      </p>
     </footer>
   );
 }
