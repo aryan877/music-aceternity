@@ -11,7 +11,6 @@ const HeroSection = () => {
         fill="white"
       />
       <div className="p-4 relative z-10 w-full text-center">
-        {/* Increased top margin for the h1 on smaller screens */}
         <h1 className="mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
           Master the Art of Music
         </h1>
@@ -21,11 +20,13 @@ const HeroSection = () => {
           your skills, join us to unlock your true potential.
         </p>
         <div className="mt-4">
-          <Link
-            href="/courses"
-            className="inline-block bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 rounded-1.75rem py-2 px-4"
-          >
-            Explore Courses
+          <Link href="/courses">
+            <Button
+              borderRadius="1.75rem"
+              className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            >
+              Explore Courses
+            </Button>
           </Link>
         </div>
       </div>
