@@ -38,16 +38,19 @@ const musicSchoolTestimonials = [
 
 export function MusicSchoolTestimonials() {
   return (
-    <div className="min-h-[30rem] md:h-[40rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex flex-col items-center justify-center py-10">
-      <h2 className="text-xl md:text-3xl font-bold text-center mb-4 md:mb-8 px-4">
+    <div className="h-[40rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex flex-col items-center justify-center overflow-hidden">
+      <h2 className="text-3xl font-bold text-center mb-8 z-10">
         Hear Our Harmony: Voices of Success
       </h2>
-      <div className="w-full max-w-4xl mx-auto overflow-hidden">
-        <InfiniteMovingCards
-          items={musicSchoolTestimonials}
-          direction="right"
-          speed="slow"
-        />
+      {/* Centering the content and handling overflow */}
+      <div className="flex justify-center w-full overflow-hidden px-4 sm:px-6 lg:px-8">
+        <div className="w-full max-w-6xl">
+          <InfiniteMovingCards
+            items={musicSchoolTestimonials}
+            direction="right"
+            speed="slow"
+          />
+        </div>
       </div>
     </div>
   );
